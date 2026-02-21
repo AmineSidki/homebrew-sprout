@@ -1,18 +1,18 @@
-# Generated with JReleaser 1.13.1 at 2026-02-21T13:19:42.950142373Z
+# Generated with JReleaser 1.13.1 at 2026-02-21T13:40:02.370737094Z
 
 class Sprout < Formula
   desc "Sprout CLI scaffolding tool"
   homepage "https://github.com/AmineSidki/sprout-releases"
-  version "1.6.3"
+  version "1.6.5"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.6.3/sprout-osx-x86_64.zip"
-    sha256 "11738a6ebfcfd1ddfb0594de123d98fefd898d6220afb641b9f84c0e4631886b"
+    url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.6.5/sprout-osx-x86_64.zip"
+    sha256 "875edbda21545ab2301e7ec0935eb8a627466140bf58c3270912701ab0d05129"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.6.3/sprout-osx-x86_64.zip"
-    sha256 "11738a6ebfcfd1ddfb0594de123d98fefd898d6220afb641b9f84c0e4631886b"
+    url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.6.5/sprout-osx-x86_64.zip"
+    sha256 "875edbda21545ab2301e7ec0935eb8a627466140bf58c3270912701ab0d05129"
   end
 
 
@@ -23,6 +23,6 @@ class Sprout < Formula
 
   test do
     output = shell_output("#{bin}/sprout --version")
-    assert_match "1.6.3", output
+    assert_match "1.6.5", output
   end
 end
