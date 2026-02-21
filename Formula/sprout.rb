@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.13.1 at 2026-02-21T12:01:06.03770972Z
+# Generated with JReleaser 1.13.1 at 2026-02-21T12:04:44.857211354Z
 
 class Sprout < Formula
   desc "Sprout CLI scaffolding tool"
