@@ -1,20 +1,14 @@
-# Generated with JReleaser 1.13.1 at 2026-02-21T14:03:35.790807892Z
+# Generated with JReleaser 1.13.1 at 2026-02-21T23:18:09.305128828Z
 
 class Sprout < Formula
   desc "Sprout CLI scaffolding tool"
   homepage "https://github.com/AmineSidki/sprout-releases"
-  version "1.6.6"
+  url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.7.1/sprout-1.7.1.zip"
+  version "1.7.1"
+  sha256 "a3d22dd6ce241ce67657a489c4f6e4333b4061d10847450b130b8b7db2a2c4a1"
   license "MIT"
 
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.6.6/sprout-osx-aarch_64.zip"
-    sha256 "275a572d6387d02e25896c7f4deca59df7cef43653c25b335bd101e75d53eef1"
-  end
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.6.6/sprout-osx-x86_64.zip"
-    sha256 "0fb07a36d8728539aac039d01e5f444b215e5f1b55d4f17cf9d94db35b02e93d"
-  end
-
+  depends_on "openjdk@17"
 
   def install
     libexec.install Dir["*"]
@@ -23,6 +17,6 @@ class Sprout < Formula
 
   test do
     output = shell_output("#{bin}/sprout --version")
-    assert_match "1.6.6", output
+    assert_match "1.7.1", output
   end
 end
