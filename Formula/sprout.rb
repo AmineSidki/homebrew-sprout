@@ -1,11 +1,11 @@
-# Generated with JReleaser 1.13.1 at 2026-02-22T00:10:27.263702097Z
+# Generated with JReleaser 1.13.1 at 2026-02-22T01:52:44.436607437Z
 
 class Sprout < Formula
   desc "Sprout CLI scaffolding tool"
   homepage "https://github.com/AmineSidki/sprout-releases"
   url "https://github.com/AmineSidki/sprout-releases/releases/download/v1.7.2/sprout-1.7.2.zip"
   version "1.7.2"
-  sha256 "b032ee867bab2aff8a6f2c68f4bdda9f5d1daa9f7d5ac50846ba42d6b3682d10"
+  sha256 "10225fff0c7ecde05534f8d2d83e080283e80e0f5c58a058511d4a16486c5ff7"
   license "MIT"
 
   depends_on "openjdk@17"
